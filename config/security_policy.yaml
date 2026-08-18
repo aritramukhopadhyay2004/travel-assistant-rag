@@ -1,0 +1,17 @@
+security_policy:
+  version: "1.0.0"
+  privacy_and_confidentiality:
+    pii_masking: true
+    allow_internal_documents: false
+    log_user_queries: true
+  
+  grounding_rules:
+    strict_mode: true
+    require_citations: true
+    zero_hallucination_clause: "Never generate fictitious prices, opening hours, transport fees, or rules not present in source context."
+    refusal_if_missing: true
+
+  guardrail_action:
+    action_type: "REJECT"
+    log_event: true
+    refusal_message: "I am designed to answer questions strictly related to destination tourism using official travel documents. Your request falls outside our allowed scope or privacy policies."

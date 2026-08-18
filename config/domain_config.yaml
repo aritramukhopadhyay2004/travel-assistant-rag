@@ -1,0 +1,28 @@
+domain:
+  title: "Tourism Guide Assistant (RAG)"
+  destination: "Destination Travel Assistant"
+  target_users: "Travelers, tourists, and visitors (solo or families)"
+  description: "Official destination assistant providing consistent, sourced, and accurate travel information."
+
+allowed_categories:
+  - name: "Top Attractions & Itineraries"
+    description: "Main attractions, historical sites, seasonal events, and suggested duration/time allocation."
+  - name: "Opening Hours & Monument Timings"
+    description: "Weekday and weekend operating hours for monuments, museums, and sites."
+  - name: "Ticketing & Pricing"
+    description: "Ticket prices, entry fees, concession rates, and discounts."
+  - name: "Best Time to Visit & Weather"
+    description: "Seasonal weather patterns, climate info, and optimal months to travel."
+  - name: "Local Transport & Airport Transfers"
+    description: "Public transport routes, MRT/bus lines, taxi services, and airport to city options."
+  - name: "Cultural Guidelines & Local Laws"
+    description: "Etiquette, dress codes, emergency numbers, local laws, and visiting rules."
+
+out_of_scope_categories:
+  - "Questions about unrelated destinations, cities, or countries."
+  - "Personal advice not supported by documents (e.g. personal medical or financial recommendations)."
+  - "Real-time updates not present in documents (e.g. live traffic, today's specific weather, unexpected closures yesterday)."
+  - "Private or sensitive personal data of individuals or internal non-public documents."
+  - "Legal or medical decisions beyond general public travel safety guidance."
+
+refusal_response: "I cannot find this information in the official travel knowledge sources or the request is outside the scope of the destination tourism guide."
